@@ -10,7 +10,6 @@
 		7D05F3052741359800EBDBB1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D05F3042741359800EBDBB1 /* AppDelegate.swift */; };
 		7D05F30B2741359C00EBDBB1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7D05F30A2741359C00EBDBB1 /* Assets.xcassets */; };
 		7D05F3112741359C00EBDBB1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7D05F30F2741359C00EBDBB1 /* LaunchScreen.storyboard */; };
-		7D05F3242741371400EBDBB1 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D05F3232741371400EBDBB1 /* RootViewController.swift */; };
 		7D05F33227413A1500EBDBB1 /* libBottomSheet.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D05F32A274139E100EBDBB1 /* libBottomSheet.a */; };
 		7D05F342274140F700EBDBB1 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 7D05F341274140F700EBDBB1 /* SnapKit */; };
 		7D59054827BD2DC70000BC17 /* BottomSheetUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 7D59054727BD2DC70000BC17 /* BottomSheetUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -39,6 +38,9 @@
 		7DB24CEC27BD1FAD001030C7 /* JMMulticastDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DB24CE927BD1FAD001030C7 /* JMMulticastDelegate.m */; };
 		7DD5185028AA2FBA003F3D2A /* UIViewController+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DD5184E28AA2F46003F3D2A /* UIViewController+Convenience.swift */; };
 		7DD5185328AA369E003F3D2A /* BottomSheetConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DD5185128AA34D9003F3D2A /* BottomSheetConfiguration.swift */; };
+		AA897DC52AD84B1A0006A77C /* ControllerWithRowsOnBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA897DC22AD84B1A0006A77C /* ControllerWithRowsOnBase.swift */; };
+		AA897DC62AD84B1A0006A77C /* CurtainBaseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA897DC32AD84B1A0006A77C /* CurtainBaseVC.swift */; };
+		AA897DC82AD84B450006A77C /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA897DC72AD84B450006A77C /* RootViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -87,7 +89,6 @@
 		7D05F30A2741359C00EBDBB1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7D05F3102741359C00EBDBB1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7D05F3122741359C00EBDBB1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7D05F3232741371400EBDBB1 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
 		7D05F32A274139E100EBDBB1 /* libBottomSheet.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libBottomSheet.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D59054727BD2DC70000BC17 /* BottomSheetUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BottomSheetUtils.h; sourceTree = "<group>"; };
 		7D59054927BD2DCE0000BC17 /* JMMulticastDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMMulticastDelegate.h; sourceTree = "<group>"; };
@@ -113,6 +114,9 @@
 		7DB24CE927BD1FAD001030C7 /* JMMulticastDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMMulticastDelegate.m; sourceTree = "<group>"; };
 		7DD5184E28AA2F46003F3D2A /* UIViewController+Convenience.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Convenience.swift"; sourceTree = "<group>"; };
 		7DD5185128AA34D9003F3D2A /* BottomSheetConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomSheetConfiguration.swift; sourceTree = "<group>"; };
+		AA897DC22AD84B1A0006A77C /* ControllerWithRowsOnBase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ControllerWithRowsOnBase.swift; sourceTree = "<group>"; };
+		AA897DC32AD84B1A0006A77C /* CurtainBaseVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurtainBaseVC.swift; sourceTree = "<group>"; };
+		AA897DC72AD84B450006A77C /* RootViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -210,27 +214,11 @@
 			path = "User Interface";
 			sourceTree = "<group>";
 		};
-		7D05F31C2741364500EBDBB1 /* Root */ = {
-			isa = PBXGroup;
-			children = (
-				7D05F3232741371400EBDBB1 /* RootViewController.swift */,
-			);
-			path = Root;
-			sourceTree = "<group>";
-		};
 		7D05F33127413A1500EBDBB1 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		7D7338D5274269DF004D7E59 /* Resize */ = {
-			isa = PBXGroup;
-			children = (
-				7D7338D3274269A3004D7E59 /* ResizeViewController.swift */,
-			);
-			path = Resize;
 			sourceTree = "<group>";
 		};
 		7DA6E0B2274F915A009F5C37 /* BottomSheet */ = {
@@ -310,8 +298,10 @@
 		7DA9B01727439F8400284B0F /* Screens */ = {
 			isa = PBXGroup;
 			children = (
-				7D7338D5274269DF004D7E59 /* Resize */,
-				7D05F31C2741364500EBDBB1 /* Root */,
+				AA897DC22AD84B1A0006A77C /* ControllerWithRowsOnBase.swift */,
+				AA897DC32AD84B1A0006A77C /* CurtainBaseVC.swift */,
+				7D7338D3274269A3004D7E59 /* ResizeViewController.swift */,
+				AA897DC72AD84B450006A77C /* RootViewController.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -393,7 +383,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7D05F32E274139E100EBDBB1 /* Build configuration list for PBXNativeTarget "BottomSheet" */;
 			buildPhases = (
-				7D1A478E298DC8C2004832D4 /* Swiftformat */,
 				7D05F326274139E100EBDBB1 /* Sources */,
 				7D05F327274139E100EBDBB1 /* Frameworks */,
 				7D05F328274139E100EBDBB1 /* CopyFiles */,
@@ -489,35 +478,16 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
-/* Begin PBXShellScriptBuildPhase section */
-		7D1A478E298DC8C2004832D4 /* Swiftformat */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			name = Swiftformat;
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "cd BuildTools\nSDKROOT=(xcrun --sdk macosx --show-sdk-path)\nswift run -c release swiftformat \"$SRCROOT\"\n";
-		};
-/* End PBXShellScriptBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
 		7D05F2FD2741359800EBDBB1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AA897DC62AD84B1A0006A77C /* CurtainBaseVC.swift in Sources */,
 				7D05F3052741359800EBDBB1 /* AppDelegate.swift in Sources */,
 				7DA9B01A27439FA100284B0F /* UIControl+EventHandling.swift in Sources */,
-				7D05F3242741371400EBDBB1 /* RootViewController.swift in Sources */,
+				AA897DC82AD84B450006A77C /* RootViewController.swift in Sources */,
+				AA897DC52AD84B1A0006A77C /* ControllerWithRowsOnBase.swift in Sources */,
 				7D7338D4274269A3004D7E59 /* ResizeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

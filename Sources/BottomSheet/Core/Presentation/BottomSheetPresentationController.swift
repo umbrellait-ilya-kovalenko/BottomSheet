@@ -260,8 +260,6 @@ public final class BottomSheetPresentationController: UIPresentationController {
         presentedViewController.view.clipsToBounds = true
 
         pullBar?.layer.mask = nil
-        presentedViewController.view.layer.cornerRadius = configuration.cornerRadius
-        presentedViewController.view.layer.maskedCorners = [.layerMinXMinYCorner, .layerMaxXMinYCorner]
     }
 
     private func addSubviews() {
@@ -278,6 +276,8 @@ public final class BottomSheetPresentationController: UIPresentationController {
         guard case .visible(let appearance) = configuration.pullBarConfiguration else { return }
         let pullBar = PullBar()
         pullBar.frame.size = CGSize(width: containerView.frame.width, height: appearance.height)
+        pullBar.layer.cornerRadius = configuration.cornerRadius
+        pullBar.layer.maskedCorners = [.layerMinXMinYCorner, .layerMaxXMinYCorner]
         containerView.addSubview(pullBar)
 
         self.pullBar = pullBar
